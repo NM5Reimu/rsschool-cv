@@ -1,0 +1,1 @@
+https://nm5reimu.io/rsschool-cv/cv
