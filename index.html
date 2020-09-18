@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/cv.css">
+    <title>Curriculum Vitae</title>
+</head>
+<body>
+    <header>
+        <h1 id="CV">Curriculum Vitae</h1>
+    </header>
+
+    <div class="content">
+        <section class="avatar">
+            <img src='src/avatar/16000887591400.png' alt='avatar' height='280px'/>
+        </section>
+
+        <section class="segment" id="briefInfo">
+            <h2>Brief information</h2>
+            <p><b>About:</b>  I’m a young and smart guy who wants to work (not sure) and make money. </p>
+            <p><b>Goal:</b></p>
+            <ul>
+                <li>Studying front-end development</li>
+                <li>Get a job in EPAM</li>
+            </ul>
+        </section>
+
+        <section class="segment" id="personalInfo">
+            <h2>Personal information</h2>
+            <p> <b>First name:</b> Eugene</p>
+            <p> <b>Last name:</b> Romanov</p>
+            <p> <b>Address:</b> Tver, Russia</p>
+            <p> <b>Telephone:</b> +7-996-347-20-45</p>
+            <p> <b>Email:</b> nm5reimu@gmail.com</p>
+            <p> <b>Date of birth:</b> 10th June 1998 </p>
+            <p> <b>Nationality:</b> Russian</p>
+        </section>
+
+        <section class="segment" id="skills">            
+            <h2>Skills</h2>
+            <ul>
+                <li>C</li>
+                <li>C#</li>
+                <li>JavaScript</li>
+                <li>CSS</li>
+                <li>HTML</li>
+                <li>React</li>
+                <li>Vue</li>
+                <li>Git</li>
+                <li>Markdown</li>
+            </ul>
+        </section>
+
+        <hr>
+        <section class="segment" id="codeEx">
+            <h2>Example code</h2>
+            
+            <pre>
+                <code>
+    //Not very good code that no one will understand I guess
+
+    const showVideosInRows = (numberOfVideosInRow) => {        
+        const rows = [...Array(Math.ceil((this.state.title.video.length) / numberOfVideosInRow))];
+        const itemRows = rows.map( (row, idx) => 
+            this.state.title.video.slice(idx * numberOfVideosInRow, idx * numberOfVideosInRow + numberOfVideosInRow)
+        );
+        const videoRows = itemRows.map((row, idx) => (
+            <Grid.Row key={idx}>                    
+                {
+                    row.map((item, index) => (                        
+                        <Grid.Column key={index}>
+                            <Embed
+                                icon='play'
+                                placeholder={item.placeholder}
+                                url={item.video_path}
+                                active={false}
+                                onClick={(e) => this.handleVideoDimmerChange(e, item.video_path)}
+                            />
+                        </Grid.Column>
+                    ))
+                }                                     
+            </Grid.Row>
+        )); 
+        return videoRows;
+    }  
+                </code>
+            </pre>
+            
+        </section>
+        <hr>
+        <section class="segment">
+            <h2>Work experience</h2>
+            <p>Several <b>almost</b> finished C# and React/C# (React - front-end, C# - back-end) projects that no one should see.</p>
+        </section>
+        <hr>
+        <section class="segment">
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    Tver State Technical University, Faculty of Information Technology, Bachelor of Software Engineering (2016 - 2020).
+                </li>
+                <li>
+                    Accenture front-end courses.
+                </li>
+            </ul>
+        </section>
+        <hr>
+        <section class="segment">
+            <h2>English language</h2>
+            <p><b>B1</b> Intermediate level.</p>
+        </section>
+    </div>
+</body>
+</html>
