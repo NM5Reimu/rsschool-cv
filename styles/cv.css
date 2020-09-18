@@ -1,5 +1,36 @@
-.mainContent{
+#CV{
+    text-align: center;
+}
+.content{
     width: 65%;
-    background: #aca3a3;
+    background: #ffffff;
     margin: auto;
+}
+
+#personalInfo{
+    display: inline-block;
+}
+.avatar{
+    display: inline-block;
+}
+#briefInfo{
+    display: inline-block;
+}
+#skills{
+    display: inline-block;
+}
+
+#codeEx pre{
+    background: rgb(233, 233, 233);
+}
+
+.avatar{
+    margin: 10px;
+    
+}
+
+.segment{
+    vertical-align: top;
+    margin-bottom: 10px;
+    padding: 10px;
 }
